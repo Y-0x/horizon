@@ -94,6 +94,14 @@ jobs:
             # The server build too: packaging/server/install.sh installs it on Linux.
             server_dir: horizon-server-linux-x86_64
             server_asset: horizon-server-linux-x86_64.tar.gz
+            
+          - name: linux-arm64
+            os: ubuntu-24.04-arm
+            dir: horizon-linux-arm64
+            asset: horizon-linux-arm64.tar.gz
+            server_dir: horizon-server-linux-arm64
+            server_asset: horizon-server-linux-arm64.tar.gz
+            
           - name: windows
             os: windows-latest
             dir: horizon-windows-x64
